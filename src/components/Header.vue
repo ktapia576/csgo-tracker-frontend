@@ -6,10 +6,10 @@
 
 <script>
 export default {
-  name: 'App',
+  name: 'Header',
   data() {
       return {
-          image: require('@/assets/csgo.jpg')
+          image: require('@/assets/csgo-white.png')
       }
   }
 }
