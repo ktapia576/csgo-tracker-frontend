@@ -14,6 +14,10 @@
 </template>
 
 <script>
+import { useToast } from "vue-toastification";
+
+const toast = useToast();
+
 export default {
   name: 'Search',
   data() {
@@ -24,9 +28,9 @@ export default {
   methods: {
     onSubmit() {
         if(!this.steamID) {
-            console.log("Please enter a steamID")
+            toast.error("Please enter a steamID")
         } else {
-            console.log("will redirect")
+            toast.success("will redirect")
         }
     }
   }
