@@ -17,9 +17,18 @@
 export default {
   name: 'Search',
   data() {
-      return {
-          steamID: ""
-      }
+    return {
+        steamID: ""
+    }
+  },
+  methods: {
+    onSubmit() {
+        if(!this.steamID) {
+            console.log("Please enter a steamID")
+        } else {
+            console.log("will redirect")
+        }
+    }
   }
 }
 </script>
