@@ -30,7 +30,7 @@ export default {
         if(!this.steamID) {
             toast.error("Please enter a steamID")
         } else {
-            toast.success("will redirect")
+            this.$router.push(`/profile/steam/${this.steamID}`)
         }
     }
   }
