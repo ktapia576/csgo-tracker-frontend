@@ -1,5 +1,5 @@
 <template>
-    <div class="text-light">
+    <div>
         <div v-if="loading">
             <Spinner />
         </div>
@@ -9,19 +9,21 @@
         </div>
 
         <div v-if="profileData">
-            {{profileData.platformInfo.platformUserHandle}}
+            <ProfileHeader :avatarUrl="profileData.platformInfo.avatarUrl" :platformUserHandle="profileData.platformInfo.platformUserHandle" />
         </div>
     </div>
 </template>
 
 <script>
 import axios from 'axios'
+import ProfileHeader from './ProfileHeader'
 import Spinner from './Spinner'
 
 export default {
     name: "Profile",
     components: {
-        Spinner
+        Spinner,
+        ProfileHeader
     },
     data() {
         return {
