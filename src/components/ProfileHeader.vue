@@ -5,14 +5,14 @@
                 <img :src="avatarUrl" class="rounded-circle img-fluid" >
             </div>
             <div class="col-8">
-                <h5 class="ml-3 font-weight-bold text-break">Pinakanakapagpapabagabag-damdami</h5>
+                <h5 class="ml-3 font-weight-bold text-break">{{ platformUserHandle }}</h5>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-// {{ platformUserHandle }}
+
 export default {
     name: "ProfileHeader",
     props: {
