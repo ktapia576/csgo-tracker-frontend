@@ -1,5 +1,6 @@
 <template>
     <div class="container rounded bg-black shadow text-white">
+        <font-awesome-icon :icon="['fas', 'clock']" />
         {{timePlayed}}
     </div>
 </template>
