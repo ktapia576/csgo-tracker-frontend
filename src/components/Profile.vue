@@ -9,7 +9,19 @@
         </div>
 
         <div v-if="profileData">
-            <ProfileHeader :avatarUrl="profileData.platformInfo.avatarUrl" :platformUserHandle="profileData.platformInfo.platformUserHandle" />
+            <ProfileHeader 
+                :avatarUrl="profileData.platformInfo.avatarUrl" 
+                :platformUserHandle="profileData.platformInfo.platformUserHandle" 
+            />
+            <ProfileStats 
+                :timePlayed="profileData.segments[0].stats.timePlayed.displayValue" 
+                :kills="profileData.segments[0].stats.kills.displayValue"
+                :deaths="profileData.segments[0].stats.deaths.displayValue"
+                :kd="profileData.segments[0].stats.kd.displayValue"
+                :headshots="profileData.segments[0].stats.headshots.displayValue"
+                :headshotPct="profileData.segments[0].stats.headshotPct.displayValue"
+                :shotsAccuracy="profileData.segments[0].stats.shotsAccuracy.displayValue"
+            />
         </div>
     </div>
 </template>
@@ -17,13 +29,15 @@
 <script>
 import axios from 'axios'
 import ProfileHeader from './ProfileHeader'
+import ProfileStats from './ProfileStats'
 import Spinner from './Spinner'
 
 export default {
     name: "Profile",
     components: {
         Spinner,
-        ProfileHeader
+        ProfileHeader,
+        ProfileStats
     },
     data() {
         return {
