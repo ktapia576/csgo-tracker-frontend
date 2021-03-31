@@ -1,5 +1,5 @@
 <template>
-    <div class="container rounded bg-light shadow p-5 my-4">
+    <div class="container rounded bg-light shadow p-5 my-3">
         <div class="row">
             <div class="col">
                 <img :src="avatarUrl" class="rounded-circle img-fluid" >

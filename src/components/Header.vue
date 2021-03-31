@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="py-2">
         <img :src="image" class="img-fluid">
     </header>
 </template>
