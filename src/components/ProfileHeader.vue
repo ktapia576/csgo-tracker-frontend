@@ -1,7 +1,7 @@
 <template>
     <div class="container rounded bg-light shadow p-5 my-3">
         <div class="row">
-            <div class="col">
+            <div class="col-4">
                 <img :src="avatarUrl" class="rounded-circle img-fluid" >
             </div>
             <div class="col-8">

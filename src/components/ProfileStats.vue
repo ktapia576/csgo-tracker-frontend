@@ -1,14 +1,29 @@
 <template>
-    <div class="container rounded bg-black shadow text-white">
-        <font-awesome-icon :icon="['fas', 'clock']" />
-        {{timePlayed}}
-    </div>
+    <div>
+        <ProfileStatsItem name="Time Played" icon="far fa-clock" :value="timePlayed" />
+        <ProfileStatsItem name="Kills" icon="fas fa-user" :value="kills" />
+        <ProfileStatsItem name="Deaths" icon="fas fa-dizzy" :value="deaths" />
+        <ProfileStatsItem name="K/D" icon="fas fa-balance-scale-left" :value="kd" />
+        <ProfileStatsItem name="Headshots" icon="fas fa-crosshairs" :value="headshots" />
+        <div class="row">
+            <div class="col">
+                <ProfileStatsItem name="Headshot Percentage" icon="fas fa-bullseye" :value="headshotPct" />
+            </div>
+            <div class="col">
+                <ProfileStatsItem name="Shot Accuracy" icon="fas fa-percent" :value="shotsAccuracy" />
+            </div>
+        </div>      
+    </div> 
 </template>
 
 <script>
+import ProfileStatsItem from './ProfileStatsItem'
 
 export default {
     name: "ProfileStats",
+    components: {
+        ProfileStatsItem
+    },
     props: {
         timePlayed: String,
         kills: String,
@@ -24,7 +39,7 @@ export default {
 
 <style scoped>
 .bg-black { 
-    background-color: #000000!important;
+    background-color: #2e2e2e!important;
 }
 
 
