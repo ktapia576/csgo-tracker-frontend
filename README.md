@@ -1,24 +1,4 @@
-# client
+# [DEMO](https://csgotracker.kevintapia.com/)
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# For Node.js Back End Code Go To:
+https://github.com/ktapia576/csgo-tracker
