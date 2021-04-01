@@ -4,8 +4,10 @@
             <Spinner />
         </div>
         <div v-if="error">
-            <h1>{{error}}</h1>
-            <router-link to="/"> Go Back </router-link>
+            <h1 class="text-white my-5">{{error}}</h1>
+            <div class="d-flex justify-content-center my-2 ">
+                <router-link to="/" class="btn btn-sm btn-outline-light"> Go Back </router-link> 
+            </div>
         </div>
 
         <div v-if="profileData">

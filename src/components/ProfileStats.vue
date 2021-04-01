@@ -12,7 +12,10 @@
             <div class="col">
                 <ProfileStatsItem name="Shot Accuracy" icon="fas fa-percent" :value="shotsAccuracy" />
             </div>
-        </div>      
+        </div> 
+        <div class="d-flex justify-content-center my-2">
+            <router-link to="/" class="btn btn-sm btn-outline-light"> Go Back </router-link> 
+        </div>
     </div> 
 </template>
 
