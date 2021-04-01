@@ -1,5 +1,7 @@
 <template>
-    <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    <div class="d-flex my-5 justify-content-center">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
 </template>
 
 <script>

@@ -4,7 +4,7 @@
             <Spinner />
         </div>
         <div v-if="error">
-            <h1 class="text-white my-5">{{error}}</h1>
+            <h1 class="text-white my-5 text-center">{{error}}</h1>
             <div class="d-flex justify-content-center my-2 ">
                 <router-link to="/" class="btn btn-sm btn-outline-light"> Go Back </router-link> 
             </div>
