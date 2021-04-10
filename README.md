@@ -1,24 +1,8 @@
-# client
+# CS:GO Tracker
+A repo for a web app to show player stats for a searched player in CSGO while using Vue.js as Front End and Node.js as Back End
 
-## Project setup
-```
-npm install
-```
+# Live Demo
+For Live Demo [Click Here](https://csgotracker.kevintapia.com/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# For Node.js Back End Code Go To:
+https://github.com/ktapia576/csgo-tracker
