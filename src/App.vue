@@ -17,5 +17,7 @@ export default {
 </script>
 
 <style>
-
+.bg-light-dark {
+  background-color: #324254!important;
+}
 </style>
